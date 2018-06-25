@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <% include partials/head %>
+    </head>
+     <header>
+       <% include partials/header %>
+     </header>
+     <main>
+       <div class="bg-overlay">
+         	<div class="row center-align">
+         		<h1>Welcome</h1> <br /> <br /> <br>
+                   <p class="container" style="font-size:24px;">
+                     This program will read registers from VortexMassMeterSim Application.
+                     The program can read up to 10 registers from the ProV Sim with datatypes that include integer, hex, ascii, and byte.
+                   </p>
+                 <br><br> <br>
+                   <a type="button" href="/modbus" class="btn btn-primary btn-lg green darken-4">Get Started</a>
+                <br> <br><br><br> <br> <br>
+         	</div>
+       </div>
+       <div>
+         <br /> <br>
+         <h1 class="center-align headerClass"> About </h1>
+         <div class="container">
+           <br>
+           <p class="center-align" style="font-size:18px;">
+             Modbus is a serial communication protocol developed by Modicon published by Modicon® in 1979 for use with its programmable logic controllers (PLCs). In simple terms, it is a method used for transmitting information over serial lines between electronic devices. The device requesting the information is called the Modbus Master and the devices supplying information are Modbus Slaves. In a standard Modbus network, there is one Master and up to 247 Slaves, each with a unique Slave Address from 1 to 247. The Master can also write information to the Slaves.
+              <br /> <br /> <br>
+              <a type="button" href="/modbus" class="btn btn-primary btn-lg green darken-4">Goto Modbus</a>
+              <br> <br> <br> <br> <br>
+           </p>
+         </div>
+       </div>
+       <footer>
+         <% include partials/footer %>
+       </footer>
+     </main>
+  </html>

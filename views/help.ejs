@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <% include partials/head %>
+    </head>
+     <header>
+       <% include partials/header %>
+     </header>
+     <main>
+       <br />
+       <!-- <h1 class="center-align headerClass"> Help</h1>
+       <div class="container">
+         <br>
+         <p>
+           <b> Com Port: </b> You can find the virtual com port by navigating to Computer -> Control Panel ->
+           Device Manager -> Ports (COM & LPT) and then using the correct port number. This input is required.
+         </p>
+
+
+         <p>
+           <b>Unit Address: </b> A unique address thats between 1 and 127 that specifies the slaves id. Default is 1. The user can have up to 127 slaves all with unique
+           addresses, however for this program there will only be 1 slave.
+         </p>
+         <p>
+           <b>Start Register: </b> Starting address that the modbus program will read from.
+         </p>
+         <p>
+           <b>Number of Registers: </b> Integer value to tell how many registers to read from. The number must be greater than 0 and less than 16.
+         </p>
+         <p>
+           <b> Format Parameters: </b> Posible data types are either signed/unsigned which include byte(b/B), hex (h/H), or int (i/I). Please note: Unsigned datatypes
+           are capitalized and signed types are lowercase.
+         </p>
+         <p>
+           <b> Parity: </b> 0-none, 1-odd, 2-even. Default odd. A parity bit, also known as a check bit,
+           is a single bit that can be appended to a binary string. It is set to either 1 or 0 to make
+           the total number of 1-bits either even ("even parity") or odd ("odd parity").
+         </p>
+         <p>
+           <b> Baud Rate: </b> One of the more common baud rates, especially for simple stuff where speed
+           isn't critical, is 9600 bps. Other “standard” baud are 1200, 2400, 4800, 19200, 38400, 57600,
+           and 115200. The higher a baud rate goes, the faster data is sent/received, but there are limits
+           to how fast data can be transferred. (bits/second)
+         </p>
+         <p>
+           <b> Function Code: </b>  The function code field informs the server of what type of action to perform.
+           Tells whether to read or write and from which table to perform the execution. (OPTIONS): 1 => Read Coil, 2 => Read Discrete input,
+           3 => Read Holding Registers, 4 => Read Input Registers, 5 => Write Single Coil, 6 => Write Single Holding Register, 15 => Write Multiple Coils,
+           16 => Write Multiple Holding Registers
+         </p>
+       </div> --> <br> <br> <br> <br>
+       <div class="container">
+         <div class="jumbotron">
+          <div class="row">
+            <div class="">
+              <div class="card z-depth-5">
+                <div class="card-content">
+                    <br>
+                  <span class="card-title center-align"><h3 style="color:#388e3c;">Help</h3></span> <br> <br>
+                  <div class="container">
+                    <p>
+                      <b> Com Port: </b> This input is required, and the user must enter the port number that the simulation is using.
+                    </p> <br>
+                    <p>
+                      <b>Unit Address: </b> The unique address of the slave which is usually one.
+                    </p> <br>
+                    <p>
+                      <b>Start Register: </b> Starting address that the modbus program will read from.
+                    </p> <br>
+                    <p>
+                      <b>Number of Registers: </b> The number of registers that will be read, value must be less than 10 and greater than 1.
+                    </p> <br>
+                    <p>
+                      <b> Format Parameters: </b> Default value is an integer. Other datatypes include hex, ascii, and byte.
+                    </p><br>
+                    <p>
+                      <b> Parity: </b> 0-none, 1-odd, 2-even. Default is odd.
+                    </p><br>
+                    <p>
+                      <b> Baud Rate: </b> Specifies the speed at which the registers are read. Default is 9600 bps.
+                    </p><br>
+                    <p>
+                      <b> Function Code: </b>  The function code field informs the server of what type of action to perform. Default value is FC03.
+                    </p><br>
+                  </div>
+                </div>
+              <br> <br>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+     </main>
+       <br> <br> <br> <br> <br>
+     <footer>
+       <% include partials/footer %>
+     </footer>
+  </html>
